@@ -305,5 +305,5 @@ while True:
         print("Has caido en el pozo. Game over\n")
         sys.exit()
 
-    else: #Seguimos cazando
+    else: # Seguimos cazando
         pass
