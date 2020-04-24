@@ -202,13 +202,13 @@ def crear_actores(lista_Cuadrante_1):
         lista_actores.append(clase_Actores(localizacion = celda))
     return lista_actores
 #--------------------------------------------------------------------
-#Empezamos creando una lceldasta para las Cuadrante
+#Empezamos creando una lista para la grilla
 lista_Cuadrante = []
 #--------------------------------------------------------------------
-#llamada a un metodo
+#llamada a una función
 crear_Cuadrante()
 #--------------------------------------------------------------------
-#Creamos los clase_clase_actores y los metemos dentro del cuadrante/celda
+#Metemos los actores en la lista
 wumpus, cazador, pozo_1, pozo_2, pozo_3, oro = crear_actores(lista_Cuadrante)
 #--------------------------------------------------------------------
 #Establceer armas
@@ -217,6 +217,7 @@ flechas = 10
 while True:
     #indicamos donde estamos, y no salimos hasta realizar una acción
     cazador.localizacion.donde_estamos()
+    #indicamos si hay un muro en la casilla de al lado, dependiendo de la casilla en la que esté el cazador
     if cazador.localizacion.i == 4:
         print("Percibo un un choque y no puedes avanzar. DEBES GIRAR!")
     if cazador.localizacion.i == 12:
@@ -239,19 +240,19 @@ while True:
             print("Percibo un hedor!")
         if pozo_1.localizacion.i == Cuadrante_1:
             #Si no quieres saber donde está el actor comenta la siguiente linea.
-            print("hay un pozo(el 1) en la casilla:", pozo_1.localizacion.i)
+            print("Hay un pozo(el 1) en la casilla:", pozo_1.localizacion.i)
             print("Percibo una brisa fresca!")
         if pozo_2.localizacion.i == Cuadrante_1:
             #Si no quieres saber donde está el actor comenta la siguiente linea.
-            print("hay un pozo(el 2) en la casilla:", pozo_2.localizacion.i)
+            print("Hay un pozo(el 2) en la casilla:", pozo_2.localizacion.i)
             print("Percibo una brisa fresca!")
         if pozo_3.localizacion.i == Cuadrante_1:
             #Si no quieres saber donde está el actor comenta la siguiente linea.
-            print("hay un pozo(el 3) en la casilla:", pozo_3.localizacion.i)
+            print("Hay un pozo(el 3) en la casilla:", pozo_3.localizacion.i)
             print("Percibo una brisa fresca!")            
         if oro.localizacion.i == Cuadrante_1:
             #Si no quieres saber donde está el actor comenta la siguiente linea.
-            print("hay oro en la casilla:", pozo_3.localizacion.i)
+            print("Hay oro en la casilla:", pozo_3.localizacion.i)
             print("Percibo su brillo maravilloso!")                
     
     teclear = input("\n")
