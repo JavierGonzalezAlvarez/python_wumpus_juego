@@ -5,6 +5,11 @@ Fecha: 23/04/2020
 Version: wumpus_malvado_v.1.0
 Autor Javier González Alvarez
 
+Programa de ordenador que permite a un jugador dar ordenes por teclado a un actor (cazador) hacer 3 movimientos  (siempre y cuando no se ecnuenrte delante de un muro) dentro de una grilla de 16 celdas.
+Dependiendo de la celda en la que esté habrá percepciones de lo que se encuentra en la celda de al lado en el caso de que haya otro actor en ella.
+
+
+
 Acciones:
 Avanzar, avanzar a la derecha y avanzar a la izquierda.
 El cazador está situado en la dirección de la numeración de las casillas. 
