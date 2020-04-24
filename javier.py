@@ -288,8 +288,7 @@ while True:
             print("\n** Para de tirar a las paredes")
 
         flechas -= 1
-        if flechas == 0:
-            print("\n Te quedan {} \n".format(flechas))
+        if flechas == 0:        
             print("\n Ya no tienes fechas- Game over\n")
             sys.exit()
    
